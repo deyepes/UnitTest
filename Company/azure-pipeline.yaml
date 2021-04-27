@@ -20,6 +20,8 @@ steps:
     tasks: 'clean build'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
+    codeCoverageToolOption: 'JaCoCo'
+    codeCoverageClassFilesDirectories: 'Company/build/classes/java/main'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     sonarQubeRunAnalysis: false

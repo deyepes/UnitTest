@@ -13,7 +13,7 @@ public class RandomService {
 
     public RandomService(RandomRepository randomRepository) {
         this.randomRepository = randomRepository;
-        
+
     }
 
     public Random getLucky() {
