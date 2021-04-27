@@ -9,3 +9,17 @@ trigger:
 
 pool:
   demands: java
+
+steps:
+   
+- task: Gradle@2
+  displayName: 'gradlew clean build'
+  inputs:
+    gradleWrapperFile: 'Company/gradlew'
+    workingDirectory: 'Company'
+    tasks: 'clean build'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    sonarQubeRunAnalysis: false
