@@ -1,0 +1,11 @@
+trigger:
+  branches:
+    include:
+      - trunk
+      - feature/*
+  paths:
+    include:
+      - 'Company/*'
+
+pool:
+  demands: java
